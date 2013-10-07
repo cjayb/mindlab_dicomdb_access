@@ -130,6 +130,10 @@ class Query():
                             # several studies containing the desired modality...
                             print "Error: non-unique modalities not implemented yet!"
                             sysexit(-1)
+                        
+            # If we get this far, no studies found with the desired modality    
+            return None 
+            
         else:    
             return stud_list
 
